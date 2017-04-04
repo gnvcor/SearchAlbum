@@ -1,9 +1,18 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom';
-import App from './App';
+
+import Kernel from './components/Kernel';
+
+import store from './store';
+
+import { Provider } from 'react-redux';
+
 import './index.css';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    <Provider store={store}>
+        <Kernel />
+    </Provider>,
+    document.getElementById('root')
 );
