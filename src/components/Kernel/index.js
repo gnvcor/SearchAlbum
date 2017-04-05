@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import ReactDOM from 'react-dom';
+import Search from '../../containers/SearchContainer';
+import Favorites from '../../containers/FavoritesContainer';
 
 import './index.css';
 
-export default class Kernel {
-    constructor(props) {
-        super(props);
+export default class Kernel extends Component {
 
-
+    render() {
+        return(
+            <div className="kernel">
+                <Search />
+                <Favorites />
+            </div>
+        )
     }
 }

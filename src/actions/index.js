@@ -1,6 +1,20 @@
-export const updateReducer = (user) => {
+export const checkEmptySearch = (emptySearch) => {
     return {
-        type: 'UPLOAD_REDUCER',
-        user
+        type: 'CHECK_EMPTY_SEARCH',
+        emptySearch
+    }
+};
+
+export const updateData = (data) => {
+    return {
+        type: 'UPDATE_DATA',
+        data
+    }
+};
+
+export const updateLocalData = (localData) => {
+    return {
+        type: 'UPDATE_LOCAL_DATA',
+        localData
     }
 };

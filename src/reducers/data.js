@@ -1,12 +1,12 @@
 const initialState = {
-    reducer: null
+    data: null
 };
 
-const reducer = (state = initialState, action) => {
+const data = (state = initialState, action) => {
     switch (action.type) {
-        case 'UPLOAD_REDUCER':
+        case 'UPDATE_DATA':
             return Object.assign({}, state, {
-                reducer: action.reducer
+                data: action.data
             });
 
         default:
@@ -14,4 +14,4 @@ const reducer = (state = initialState, action) => {
     }
 };
 
-export default reducer;
+export default data;

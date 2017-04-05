@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux';
-import reducer from './reducer';
+import emptySearch from './emptySearch';
+import localData from './localData';
+import data from './data';
 
 const mainReducers = combineReducers({
-    reducer
+    emptySearch,
+    localData,
+    data
 });
 
 export default mainReducers;

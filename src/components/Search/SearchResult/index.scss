@@ -1,26 +1,21 @@
-.favorites{
-  margin-left: 20px;
-  border-left: 1px solid #e0e0e0;
-  padding: 20px;
-  width: 100%;
-
-  &__title{
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
+.search-result{
   &__error{
     font-size: 13px;
     color: #000;
+    margin-top: 10px;
   }
 
-  &__item{
+  &__data{
+    margin-top: 10px;
+  }
+
+  &__data-item{
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e0e0e0;
   }
 
-  &__item-title{
+  &__data-item-title{
     margin-bottom: 5px;
 
     span{
@@ -29,7 +24,7 @@
     }
   }
 
-  &__item-artist{
+  &__data-item-artist{
     margin-bottom: 5px;
 
     span{
@@ -38,7 +33,7 @@
     }
   }
 
-  &__item-button{
+  &__data-item-button{
     width: 150px;
     height: 25px;
     -webkit-appearance: none;
